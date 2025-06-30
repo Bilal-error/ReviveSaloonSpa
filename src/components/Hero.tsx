@@ -67,7 +67,7 @@ const Hero = () => {
             </h1>
           </div>
           
-          <p className="text-lg md:text-xl text-sage-dark mb-10 max-w-2xl mx-auto leading-relaxed animate-slide-up font-sans tracking-wide">
+          <p className="text-xl md:text-2xl text-white font-semibold mb-10 max-w-3xl mx-auto leading-relaxed animate-slide-up font-sans tracking-wide drop-shadow-lg">
             Expert salon & spa treatments in the heart of Khaitan, where beauty meets tranquility and every moment is crafted for your transformation
           </p>
 
@@ -115,10 +115,10 @@ const Hero = () => {
 
           {/* Enhanced Tagline with Seasonal Touch */}
           <div className="animate-fade-in-delayed">
-            <p className="text-sage-dark text-base font-serif italic mb-3 tracking-wide">
+            <p className="text-white/90 text-base font-serif italic mb-3 tracking-wide drop-shadow-md">
               "Where beauty meets tranquility"
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-3 text-xs text-sage-dark/70 font-sans">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-3 text-xs text-white/80 font-sans">
               <span className="flex items-center">
                 <span className="mr-1">✨</span>
                 Winter Wellness Specials Available
@@ -126,18 +126,6 @@ const Hero = () => {
               <span className="hidden sm:inline">•</span>
               <span>New Year, New You</span>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Enhanced Decorative Bottom Gradient with Better Typography Integration */}
-      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-ivory via-ivory/80 to-transparent z-5">
-        {/* Subtle text overlay for better readability transition */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center">
-          <div className="flex items-center justify-center space-x-2 text-sage/60 text-xs font-sans tracking-widest uppercase">
-            <div className="w-8 h-px bg-sage/30"></div>
-            <span>Scroll to Explore</span>
-            <div className="w-8 h-px bg-sage/30"></div>
           </div>
         </div>
       </div>
