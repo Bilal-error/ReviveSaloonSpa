@@ -112,21 +112,6 @@ const Hero = () => {
               <span className="text-lg relative z-10">Call Now</span>
             </button>
           </div>
-
-          {/* Enhanced Tagline with Seasonal Touch */}
-          <div className="animate-fade-in-delayed">
-            <p className="text-white/90 text-base font-serif italic mb-3 tracking-wide drop-shadow-md">
-              "Where beauty meets tranquility"
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-3 text-xs text-white/80 font-sans">
-              <span className="flex items-center">
-                <span className="mr-1">✨</span>
-                Winter Wellness Specials Available
-              </span>
-              <span className="hidden sm:inline">•</span>
-              <span>New Year, New You</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
