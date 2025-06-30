@@ -54,7 +54,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-sage mb-4">
@@ -66,18 +66,18 @@ const Contact = () => {
         </div>
 
         {/* Contact Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
           {contactCards.map((card, index) => (
-            <div key={index} className="bg-ivory/30 rounded-2xl p-6 text-center hover:shadow-lg transition-shadow duration-300 animate-fade-in">
-              <div className={`w-16 h-16 ${card.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                <card.icon className="text-white" size={24} />
+            <div key={index} className="bg-ivory/30 rounded-2xl p-4 sm:p-6 text-center hover:shadow-lg transition-shadow duration-300 animate-fade-in">
+              <div className={`w-12 h-12 sm:w-16 sm:h-16 ${card.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
+                <card.icon className="text-white" size={20} />
               </div>
-              <h3 className="font-serif text-lg font-semibold text-sage mb-2">{card.title}</h3>
-              <p className="font-medium text-sage-dark mb-1">{card.subtitle}</p>
-              <p className="text-sm text-sage-dark mb-4">{card.description}</p>
+              <h3 className="font-serif text-base sm:text-lg font-semibold text-sage mb-2">{card.title}</h3>
+              <p className="font-medium text-sage-dark mb-1 text-sm sm:text-base break-words">{card.subtitle}</p>
+              <p className="text-xs sm:text-sm text-sage-dark mb-4">{card.description}</p>
               <button
                 onClick={card.action}
-                className="w-full bg-white text-sage py-2 rounded-lg hover:bg-sage hover:text-white transition-colors duration-300 border border-sage"
+                className="w-full bg-white text-sage py-2 rounded-lg hover:bg-sage hover:text-white transition-colors duration-300 border border-sage text-sm"
               >
                 {card.buttonText}
               </button>
@@ -86,16 +86,16 @@ const Contact = () => {
         </div>
 
         {/* Instagram Section */}
-        <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 mb-12 text-center animate-slide-up">
+        <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 sm:p-8 mb-12 text-center animate-slide-up">
           <div className="max-w-md mx-auto">
-            <Instagram className="w-12 h-12 text-pink-500 mx-auto mb-4" />
-            <h3 className="font-serif text-xl font-semibold text-sage mb-2">Follow Our Journey</h3>
-            <p className="text-sage-dark mb-4">
+            <Instagram className="w-10 h-10 sm:w-12 sm:h-12 text-pink-500 mx-auto mb-4" />
+            <h3 className="font-serif text-lg sm:text-xl font-semibold text-sage mb-2">Follow Our Journey</h3>
+            <p className="text-sage-dark mb-4 text-sm sm:text-base">
               Get inspired by our latest work, beauty tips, and behind-the-scenes moments
             </p>
             <button
               onClick={handleInstagramClick}
-              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base break-all"
             >
               @revivesalon.kw
             </button>
@@ -103,47 +103,47 @@ const Contact = () => {
         </div>
 
         {/* Quick Booking CTA */}
-        <div className="bg-sage rounded-2xl p-8 text-center text-white animate-scale-in mb-12">
-          <h3 className="font-serif text-2xl font-semibold mb-4">Ready to Book?</h3>
-          <p className="text-sage-light mb-6 max-w-md mx-auto">
+        <div className="bg-sage rounded-2xl p-6 sm:p-8 text-center text-white animate-scale-in mb-12">
+          <h3 className="font-serif text-xl sm:text-2xl font-semibold mb-4">Ready to Book?</h3>
+          <p className="text-sage-light mb-6 max-w-md mx-auto text-sm sm:text-base">
             Choose your preferred way to get in touch and we'll help you schedule your perfect treatment
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-lg mx-auto">
             <button
               onClick={handleWhatsAppClick}
-              className="flex items-center justify-center space-x-2 bg-white text-sage px-8 py-3 rounded-full hover:bg-sage-light hover:text-white transition-colors duration-300"
+              className="flex items-center justify-center space-x-2 bg-white text-sage px-6 sm:px-8 py-3 rounded-full hover:bg-sage-light hover:text-white transition-colors duration-300 text-sm sm:text-base min-w-0"
             >
-              <MessageCircle size={20} />
-              <span>WhatsApp Booking</span>
+              <MessageCircle size={18} className="flex-shrink-0" />
+              <span className="truncate">WhatsApp Booking</span>
             </button>
             <button
               onClick={handlePhoneClick}
-              className="flex items-center justify-center space-x-2 bg-gold text-white px-8 py-3 rounded-full hover:bg-gold-dark transition-colors duration-300"
+              className="flex items-center justify-center space-x-2 bg-gold text-white px-6 sm:px-8 py-3 rounded-full hover:bg-gold-dark transition-colors duration-300 text-sm sm:text-base min-w-0"
             >
-              <Phone size={20} />
-              <span>Call Direct</span>
+              <Phone size={18} className="flex-shrink-0" />
+              <span className="truncate">Call Direct</span>
             </button>
           </div>
         </div>
 
         {/* Google Maps Section */}
-        <div className="bg-sage-light/20 rounded-2xl p-8 text-center animate-fade-in">
+        <div className="bg-sage-light/20 rounded-2xl p-6 sm:p-8 text-center animate-fade-in">
           <div className="mb-6">
-            <MapPin className="w-16 h-16 text-sage mx-auto mb-4" />
-            <h3 className="font-serif text-xl font-semibold text-sage mb-2">Visit Our Salon</h3>
-            <p className="text-sage-dark mb-6">
+            <MapPin className="w-12 h-12 sm:w-16 sm:h-16 text-sage mx-auto mb-4" />
+            <h3 className="font-serif text-lg sm:text-xl font-semibold text-sage mb-2">Visit Our Salon</h3>
+            <p className="text-sage-dark mb-6 text-sm sm:text-base">
               Located in the heart of Khaitan, Kuwait<br />
               Easy parking and accessible location
             </p>
           </div>
           
           {/* Google Maps Embed */}
-          <div className="rounded-xl overflow-hidden shadow-lg max-w-4xl mx-auto">
+          <div className="rounded-xl overflow-hidden shadow-lg w-full">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225018.20465847955!2d47.8152847!3d29.2922229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9b211b2a1995%3A0x16b6f97c1829deb7!2z2LXYp9mE2YjZhiDYsdmK2YHYp9mK2YEg2YTZhNiz2YrYr9in2KogcmV2aXZlIHNhbG9u!5e1!3m2!1sen!2skw!4v1751298379992!5m2!1sen!2skw" 
               width="100%" 
-              height="450" 
-              style={{border: 0}} 
+              height="400" 
+              style={{border: 0, maxWidth: '100%'}} 
               allowFullScreen={true}
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
