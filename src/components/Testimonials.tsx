@@ -30,7 +30,7 @@ const Testimonials = () => {
     return Array.from({ length: 5 }, (_, index) => (
       <Star
         key={index}
-        size={16}
+        size={14}
         className={index < rating ? 'text-gold fill-current' : 'text-gray-300'}
       />
     ));
@@ -48,47 +48,57 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 max-w-7xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in">
-              <div className="flex items-center mb-6">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-16 h-16 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <h3 className="font-semibold text-sage">{testimonial.name}</h3>
-                  <div className="flex items-center space-x-2">
-                    <div className="flex space-x-1">
+            <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in flex flex-col h-full">
+              <div className="flex items-start mb-4 min-h-0">
+                <div className="flex-shrink-0 mr-3">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-semibold text-sage text-sm sm:text-base truncate mb-1">
+                    {testimonial.name}
+                  </h3>
+                  <div className="flex items-center space-x-1">
+                    <div className="flex space-x-0.5">
                       {renderStars(testimonial.rating)}
                     </div>
-                    <span className="text-sm text-sage-dark">({testimonial.rating}.0)</span>
+                    <span className="text-xs text-sage-dark whitespace-nowrap">
+                      ({testimonial.rating}.0)
+                    </span>
                   </div>
                 </div>
               </div>
               
-              <p className="text-sage-dark mb-4 leading-relaxed">"{testimonial.review}"</p>
-              
-              <div className="bg-sage/10 text-sage px-3 py-1 rounded-full text-sm w-fit">
-                {testimonial.service}
+              <div className="flex-1 flex flex-col">
+                <p className="text-sage-dark text-sm sm:text-base mb-4 leading-relaxed flex-1">
+                  "{testimonial.review}"
+                </p>
+                
+                <div className="bg-sage/10 text-sage px-3 py-1.5 rounded-full text-xs sm:text-sm w-fit mt-auto">
+                  {testimonial.service}
+                </div>
               </div>
             </div>
           ))}
         </div>
 
         {/* 5-Star Rating Section */}
-        <div className="text-center bg-white rounded-2xl p-8 shadow-lg animate-slide-up">
+        <div className="text-center bg-white rounded-2xl p-6 sm:p-8 shadow-lg animate-slide-up max-w-md mx-auto">
           <div className="flex justify-center items-center space-x-2 mb-4">
             <div className="flex space-x-1">
               {renderStars(5)}
             </div>
-            <span className="text-2xl font-bold text-sage">5.0</span>
+            <span className="text-xl sm:text-2xl font-bold text-sage">5.0</span>
           </div>
-          <h3 className="font-serif text-xl font-semibold text-sage mb-2">
+          <h3 className="font-serif text-lg sm:text-xl font-semibold text-sage mb-2">
             5-Star Rated Excellence
           </h3>
-          <p className="text-sage-dark">
+          <p className="text-sage-dark text-sm sm:text-base">
             Based on over 200+ reviews from satisfied clients across Kuwait
           </p>
         </div>
