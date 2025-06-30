@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MessageCircle, MapPin, Clock } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Clock, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   const handleWhatsAppClick = () => {
@@ -11,74 +11,122 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-ivory to-sage-light/10">
-      {/* Background Image */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Dynamic Background with Multiple Layers */}
       <div className="absolute inset-0 z-0">
+        {/* Primary Background Image */}
         <img
           src="https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
           alt="Luxury spa treatment"
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ivory/80 to-transparent"></div>
+        
+        {/* Vibrant Gradient Overlay with Warm Colors */}
+        <div className="absolute inset-0 bg-gradient-to-br from-rose-400/30 via-amber-300/20 to-emerald-400/25"></div>
+        
+        {/* Dynamic Color Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-sage/60 via-transparent to-gold/20"></div>
+        
+        {/* Animated Floating Elements */}
+        <div className="absolute inset-0">
+          {/* Floating Sparkles */}
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-gold rounded-full animate-pulse opacity-70"></div>
+          <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-rose-300 rounded-full animate-ping opacity-60"></div>
+          <div className="absolute bottom-1/3 left-1/5 w-3 h-3 bg-amber-200 rounded-full animate-bounce opacity-50"></div>
+          <div className="absolute top-2/3 right-1/4 w-1.5 h-1.5 bg-emerald-300 rounded-full animate-pulse opacity-60"></div>
+          
+          {/* Larger Floating Orbs */}
+          <div className="absolute top-1/5 right-1/5 w-20 h-20 bg-gradient-to-br from-rose-200/30 to-amber-200/30 rounded-full blur-xl animate-float"></div>
+          <div className="absolute bottom-1/4 left-1/6 w-32 h-32 bg-gradient-to-br from-emerald-200/25 to-sage/25 rounded-full blur-2xl animate-float-delayed"></div>
+          <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-gradient-to-br from-gold/20 to-amber-300/20 rounded-full blur-lg animate-float-slow"></div>
+        </div>
+        
+        {/* Textured Overlay for Depth */}
+        <div className="absolute inset-0 bg-gradient-radial from-transparent via-white/5 to-sage/10"></div>
       </div>
 
+      {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-        <div className="max-w-4xl mx-auto animate-fade-in">
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-sage mb-6">
-            Experience Luxury.<br />
-            <span className="text-gold">Feel Revived.</span>
-          </h1>
+        <div className="max-w-4xl mx-auto">
+          {/* Animated Title with Enhanced Typography */}
+          <div className="animate-fade-in">
+            <div className="flex items-center justify-center mb-4">
+              <Sparkles className="text-gold w-8 h-8 mr-3 animate-pulse" />
+              <span className="text-sage font-medium tracking-wider uppercase text-sm">Premium Beauty Experience</span>
+              <Sparkles className="text-gold w-8 h-8 ml-3 animate-pulse" />
+            </div>
+            
+            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-sage mb-6 leading-tight">
+              Experience 
+              <span className="block bg-gradient-to-r from-rose-500 via-amber-500 to-emerald-500 bg-clip-text text-transparent animate-gradient">
+                Luxury Beauty.
+              </span>
+              <span className="text-gold drop-shadow-lg">Feel Revived.</span>
+            </h1>
+          </div>
           
-          <p className="text-lg md:text-xl text-sage-dark mb-8 max-w-2xl mx-auto leading-relaxed">
-            Expert salon & spa treatments in the heart of Khaitan, where beauty meets tranquility
+          <p className="text-lg md:text-xl text-sage-dark mb-8 max-w-2xl mx-auto leading-relaxed animate-slide-up">
+            Expert salon & spa treatments in the heart of Khaitan, where beauty meets tranquility and every moment is crafted for your transformation
           </p>
 
-          {/* Contact Info Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 max-w-3xl mx-auto">
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-lg">
+          {/* Enhanced Contact Info Cards with Warm Colors */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 max-w-3xl mx-auto animate-fade-in-delayed">
+            <div className="bg-gradient-to-br from-white/95 to-rose-50/90 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-rose-100/50 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <div className="flex items-center justify-center space-x-2 text-sage">
-                <MapPin size={20} />
+                <MapPin size={20} className="text-rose-500" />
                 <span className="font-medium">Khaitan, Kuwait</span>
               </div>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-lg">
+            <div className="bg-gradient-to-br from-white/95 to-amber-50/90 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-amber-100/50 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <div className="flex items-center justify-center space-x-2 text-sage">
-                <Phone size={20} />
+                <Phone size={20} className="text-amber-500" />
                 <span className="font-medium">50501008</span>
               </div>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-lg">
+            <div className="bg-gradient-to-br from-white/95 to-emerald-50/90 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-emerald-100/50 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <div className="flex items-center justify-center space-x-2 text-sage">
-                <Clock size={20} />
+                <Clock size={20} className="text-emerald-500" />
                 <span className="font-medium">Daily 10 AM – 8 PM</span>
               </div>
             </div>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          {/* Enhanced CTA Buttons with Vibrant Colors */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
             <button
               onClick={handleWhatsAppClick}
-              className="flex items-center space-x-3 bg-sage text-white px-8 py-4 rounded-full hover:bg-sage-dark transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="group flex items-center space-x-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-full hover:from-emerald-600 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl relative overflow-hidden"
             >
-              <MessageCircle size={24} />
-              <span className="font-medium text-lg">Book Appointment</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <MessageCircle size={24} className="relative z-10" />
+              <span className="font-medium text-lg relative z-10">Book Appointment</span>
             </button>
             <button
               onClick={handlePhoneClick}
-              className="flex items-center space-x-3 bg-white text-sage px-8 py-4 rounded-full hover:bg-sage hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-sage"
+              className="group flex items-center space-x-3 bg-gradient-to-r from-white to-rose-50 text-sage px-8 py-4 rounded-full hover:from-rose-100 hover:to-amber-50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl border-2 border-gradient-to-r from-rose-200 to-amber-200 relative overflow-hidden"
             >
-              <Phone size={24} />
-              <span className="font-medium text-lg">Call Now</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-rose-500/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <Phone size={24} className="relative z-10 text-rose-500" />
+              <span className="font-medium text-lg relative z-10">Call Now</span>
             </button>
           </div>
 
-          {/* Tagline */}
-          <p className="text-sage-dark text-sm mt-8 font-serif italic">
-            "Where beauty meets tranquility"
-          </p>
+          {/* Enhanced Tagline with Seasonal Touch */}
+          <div className="mt-8 animate-fade-in-delayed">
+            <p className="text-sage-dark text-sm font-serif italic mb-2">
+              "Where beauty meets tranquility"
+            </p>
+            <div className="flex items-center justify-center space-x-2 text-xs text-sage-dark/70">
+              <span>✨ Winter Wellness Specials Available</span>
+              <span>•</span>
+              <span>New Year, New You</span>
+            </div>
+          </div>
         </div>
       </div>
+
+      {/* Decorative Elements */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-ivory to-transparent z-5"></div>
     </section>
   );
 };
