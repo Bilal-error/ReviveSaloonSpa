@@ -50,83 +50,97 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Animated Title with Enhanced Typography */}
           <div className="animate-fade-in">
-            <div className="flex items-center justify-center mb-4">
-              <Sparkles className="text-gold w-8 h-8 mr-3 animate-pulse" />
-              <span className="text-sage font-medium tracking-wider uppercase text-sm">Premium Beauty Experience</span>
-              <Sparkles className="text-gold w-8 h-8 ml-3 animate-pulse" />
+            <div className="flex items-center justify-center mb-6">
+              <Sparkles className="text-gold w-6 h-6 sm:w-8 sm:h-8 mr-2 sm:mr-3 animate-pulse" />
+              <span className="text-sage font-medium tracking-wider uppercase text-xs sm:text-sm font-sans">
+                Premium Beauty Experience
+              </span>
+              <Sparkles className="text-gold w-6 h-6 sm:w-8 sm:h-8 ml-2 sm:ml-3 animate-pulse" />
             </div>
             
-            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-sage mb-6 leading-tight">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-sage mb-8 leading-tight tracking-tight">
               Experience 
-              <span className="block bg-gradient-to-r from-rose-500 via-amber-500 to-emerald-500 bg-clip-text text-transparent animate-gradient">
+              <span className="block bg-gradient-to-r from-rose-500 via-amber-500 to-emerald-500 bg-clip-text text-transparent animate-gradient mt-2 mb-2">
                 Luxury Beauty.
               </span>
               <span className="text-gold drop-shadow-lg">Feel Revived.</span>
             </h1>
           </div>
           
-          <p className="text-lg md:text-xl text-sage-dark mb-8 max-w-2xl mx-auto leading-relaxed animate-slide-up">
+          <p className="text-lg md:text-xl text-sage-dark mb-10 max-w-2xl mx-auto leading-relaxed animate-slide-up font-sans tracking-wide">
             Expert salon & spa treatments in the heart of Khaitan, where beauty meets tranquility and every moment is crafted for your transformation
           </p>
 
           {/* Enhanced Contact Info Cards with Warm Colors */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 max-w-3xl mx-auto animate-fade-in-delayed">
-            <div className="bg-gradient-to-br from-white/95 to-rose-50/90 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-rose-100/50 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 max-w-3xl mx-auto animate-fade-in-delayed">
+            <div className="bg-gradient-to-br from-white/95 to-rose-50/90 backdrop-blur-sm rounded-xl p-5 shadow-lg border border-rose-100/50 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <div className="flex items-center justify-center space-x-2 text-sage">
-                <MapPin size={20} className="text-rose-500" />
-                <span className="font-medium">Khaitan, Kuwait</span>
+                <MapPin size={20} className="text-rose-500 flex-shrink-0" />
+                <span className="font-medium text-sm sm:text-base font-sans">Khaitan, Kuwait</span>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-white/95 to-amber-50/90 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-amber-100/50 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            <div className="bg-gradient-to-br from-white/95 to-amber-50/90 backdrop-blur-sm rounded-xl p-5 shadow-lg border border-amber-100/50 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <div className="flex items-center justify-center space-x-2 text-sage">
-                <Phone size={20} className="text-amber-500" />
-                <span className="font-medium">50501008</span>
+                <Phone size={20} className="text-amber-500 flex-shrink-0" />
+                <span className="font-medium text-sm sm:text-base font-sans">50501008</span>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-white/95 to-emerald-50/90 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-emerald-100/50 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            <div className="bg-gradient-to-br from-white/95 to-emerald-50/90 backdrop-blur-sm rounded-xl p-5 shadow-lg border border-emerald-100/50 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <div className="flex items-center justify-center space-x-2 text-sage">
-                <Clock size={20} className="text-emerald-500" />
-                <span className="font-medium">Daily 10 AM – 8 PM</span>
+                <Clock size={20} className="text-emerald-500 flex-shrink-0" />
+                <span className="font-medium text-sm sm:text-base font-sans">Daily 10 AM – 8 PM</span>
               </div>
             </div>
           </div>
 
           {/* Enhanced CTA Buttons with Vibrant Colors */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in mb-12">
             <button
               onClick={handleWhatsAppClick}
-              className="group flex items-center space-x-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-full hover:from-emerald-600 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl relative overflow-hidden"
+              className="group flex items-center space-x-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-full hover:from-emerald-600 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl relative overflow-hidden font-sans font-medium"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <MessageCircle size={24} className="relative z-10" />
-              <span className="font-medium text-lg relative z-10">Book Appointment</span>
+              <MessageCircle size={24} className="relative z-10 flex-shrink-0" />
+              <span className="text-lg relative z-10">Book Appointment</span>
             </button>
             <button
               onClick={handlePhoneClick}
-              className="group flex items-center space-x-3 bg-gradient-to-r from-white to-rose-50 text-sage px-8 py-4 rounded-full hover:from-rose-100 hover:to-amber-50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl border-2 border-gradient-to-r from-rose-200 to-amber-200 relative overflow-hidden"
+              className="group flex items-center space-x-3 bg-gradient-to-r from-white to-rose-50 text-sage px-8 py-4 rounded-full hover:from-rose-100 hover:to-amber-50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl border-2 border-gradient-to-r from-rose-200 to-amber-200 relative overflow-hidden font-sans font-medium"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-rose-500/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Phone size={24} className="relative z-10 text-rose-500" />
-              <span className="font-medium text-lg relative z-10">Call Now</span>
+              <Phone size={24} className="relative z-10 text-rose-500 flex-shrink-0" />
+              <span className="text-lg relative z-10">Call Now</span>
             </button>
           </div>
 
           {/* Enhanced Tagline with Seasonal Touch */}
-          <div className="mt-8 animate-fade-in-delayed">
-            <p className="text-sage-dark text-sm font-serif italic mb-2">
+          <div className="animate-fade-in-delayed">
+            <p className="text-sage-dark text-base font-serif italic mb-3 tracking-wide">
               "Where beauty meets tranquility"
             </p>
-            <div className="flex items-center justify-center space-x-2 text-xs text-sage-dark/70">
-              <span>✨ Winter Wellness Specials Available</span>
-              <span>•</span>
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-3 text-xs text-sage-dark/70 font-sans">
+              <span className="flex items-center">
+                <span className="mr-1">✨</span>
+                Winter Wellness Specials Available
+              </span>
+              <span className="hidden sm:inline">•</span>
               <span>New Year, New You</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-ivory to-transparent z-5"></div>
+      {/* Enhanced Decorative Bottom Gradient with Better Typography Integration */}
+      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-ivory via-ivory/80 to-transparent z-5">
+        {/* Subtle text overlay for better readability transition */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center">
+          <div className="flex items-center justify-center space-x-2 text-sage/60 text-xs font-sans tracking-widest uppercase">
+            <div className="w-8 h-px bg-sage/30"></div>
+            <span>Scroll to Explore</span>
+            <div className="w-8 h-px bg-sage/30"></div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
