@@ -141,7 +141,10 @@ const Footer = () => {
               <span>Made with</span>
               <Heart size={12} className="text-gold fill-current" />
               <span>for beautiful women in Kuwait</span>
+              </p>
+            <p
               <span>By Illuxai.com</span>
+            </p>
             </p>
           </div>
         </div>
