@@ -112,7 +112,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-sage-light text-xs sm:text-sm">
-                © 2024 Revive Saloon & Spa. All rights reserved.
+                © 2025 Revive Saloon & Spa. All rights reserved.
               </p>
             </div>
             <div className="flex items-center space-x-3 sm:space-x-4">
@@ -141,6 +141,7 @@ const Footer = () => {
               <span>Made with</span>
               <Heart size={12} className="text-gold fill-current" />
               <span>for beautiful women in Kuwait</span>
+              <span>By Illuxai.com</span>
             </p>
           </div>
         </div>
