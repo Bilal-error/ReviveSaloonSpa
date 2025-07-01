@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <img
-  src="https://i.ibb.co/7JQHXjg3/b7bb999c4e6f10a84d6ed93657d73642-tplv-tiktokx-cropcenter-1080-1080-1.jpg"
+  src="https://i.ibb.co/5X0dqf2J/b7bb999c4e6f10a84d6ed93657d73642-tplv-tiktokx-cropcenter-1080-1080-1-Edited.jpg"
   alt="Revive Saloon & Spa Logo"
   className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover shadow-lg flex-shrink-0"
 />
