@@ -50,14 +50,6 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Animated Title with Enhanced Typography */}
           <div className="animate-fade-in">
-            <div className="flex items-center justify-center mb-6">
-              <Sparkles className="text-gold w-6 h-6 sm:w-8 sm:h-8 mr-2 sm:mr-3 animate-pulse" />
-              <span className="text-sage font-medium tracking-wider uppercase text-xs sm:text-sm font-sans">
-                Premium Beauty Experience
-              </span>
-              <Sparkles className="text-gold w-6 h-6 sm:w-8 sm:h-8 ml-2 sm:ml-3 animate-pulse" />
-            </div>
-            
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-sage mb-8 leading-tight tracking-tight">
               Experience 
               <span className="block bg-gradient-to-r from-rose-500 via-amber-500 to-emerald-500 bg-clip-text text-transparent animate-gradient mt-2 mb-2">
