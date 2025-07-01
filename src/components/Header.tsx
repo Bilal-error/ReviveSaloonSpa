@@ -34,7 +34,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img
-  src="https://i.ibb.co/FbXhZJrH/b7bb999c4e6f10a84d6ed93657d73642-tplv-tiktokx-cropcenter-1080-1080.jpg"
+  src="https://i.ibb.co/7JQHXjg3/b7bb999c4e6f10a84d6ed93657d73642-tplv-tiktokx-cropcenter-1080-1080-1.jpg"
   alt="Revive Saloon & Spa Logo"
   className="w-10 h-10 rounded-full object-cover shadow-lg"
 />
