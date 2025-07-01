@@ -43,7 +43,7 @@ const About = () => {
             
             <div className="flex items-center space-x-4 mb-8">
               <div className="bg-gold/20 text-gold px-4 py-2 rounded-full">
-                <span className="font-medium">Serving Kuwait since 2020</span>
+                <span className="font-medium">Serving Kuwait since 2019</span>
               </div>
             </div>
 
