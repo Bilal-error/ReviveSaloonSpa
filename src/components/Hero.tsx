@@ -59,8 +59,8 @@ const Hero = () => {
             </h1>
           </div>
           
-          <p className="text-xl md:text-2xl text-white font-semibold mb-10 max-w-3xl mx-auto leading-relaxed animate-slide-up font-sans tracking-wide drop-shadow-lg">
-            Expert salon & spa treatments in the heart of Khaitan, where beauty meets tranquility and every moment is crafted for your transformation
+          <p className="text-lg md:text-xl text-white/90 font-medium mb-10 max-w-2xl mx-auto leading-relaxed animate-slide-up font-sans tracking-wide drop-shadow-lg">
+            Indulge in premium beauty treatments that awaken your senses and restore your natural radiance at Kuwait's most luxurious salon destination
           </p>
 
           {/* Enhanced Contact Info Cards with Warm Colors */}
