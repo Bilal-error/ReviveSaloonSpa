@@ -59,7 +59,7 @@ const Hero = () => {
             </h1>
           </div>
           
-          <p className="text-lg md:text-xl text-white/90 font-medium mb-10 max-w-2xl mx-auto leading-relaxed animate-slide-up font-sans tracking-wide drop-shadow-lg">
+          <p className="font-serif text-xl md:text-2xl text-white/95 font-light mb-10 max-w-3xl mx-auto leading-relaxed animate-slide-up tracking-wide drop-shadow-lg italic">
             Indulge in premium beauty treatments that awaken your senses and restore your natural radiance at Kuwait's most luxurious salon destination
           </p>
 
