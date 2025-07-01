@@ -149,7 +149,6 @@ const Footer = () => {
   >
     By Illuxai.com
   </a>
-</p>
             </p>
           </div>
         </div>
