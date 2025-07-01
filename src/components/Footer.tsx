@@ -33,9 +33,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-sage font-serif font-bold text-lg sm:text-xl">R</span>
-              </div>
+              <img
+  src="https://i.ibb.co/7JQHXjg3/b7bb999c4e6f10a84d6ed93657d73642-tplv-tiktokx-cropcenter-1080-1080-1.jpg"
+  alt="Revive Saloon & Spa Logo"
+  className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover shadow-lg flex-shrink-0"
+/>
               <div className="min-w-0">
                 <h3 className="font-serif font-bold text-xl sm:text-2xl">R.V.S</h3>
                 <p className="text-sage-light text-xs sm:text-sm">Revive Saloon & Spa</p>
