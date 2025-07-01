@@ -141,7 +141,14 @@ const Footer = () => {
               <span>Made with</span>
               <Heart size={12} className="text-gold fill-current" />
               <span>for beautiful women in Kuwait</span>
-              <span>By Illuxai.com</span>
+              <a
+  href="https://illuxai.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="underline hover:text-gold transition-colors"
+>
+  By Illuxai.com
+</a>
             </p>
           </div>
         </div>
