@@ -33,9 +33,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-sage rounded-full flex items-center justify-center">
-              <span className="text-white font-serif font-bold text-lg">R</span>
-            </div>
+            <img
+  src="https://i.ibb.co/SXnJ0ZwN/b7bb999c4e6f10a84d6ed93657d73642-tplv-tiktokx-cropcenter-1080-1080.jpg"
+  alt="Revive Saloon & Spa Logo"
+  className="w-10 h-10 rounded-full object-cover shadow-lg"
+/>
             <div>
               <h1 className="font-serif font-bold text-xl text-sage">R.V.S</h1>
               <p className="text-xs text-sage-dark -mt-1">Revive Saloon & Spa</p>
