@@ -137,19 +137,21 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-center mt-4">
-            <p className="text-sage-light text-xs sm:text-sm flex items-center justify-center space-x-1 flex-wrap">
-              <span>Made with</span>
-              <Heart size={12} className="text-gold fill-current" />
-              <span>for beautiful women in Kuwait</span>
-              <br />
-<a
-  href="https://illuxai.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="underline hover:text-gold transition-colors"
->
-  By Illuxai.com
-</a>
+            <div className="text-sage-light text-xs sm:text-sm flex flex-col items-center justify-center">
+  <span className="flex items-center space-x-1">
+    <span>Made with</span>
+    <Heart size={12} className="text-gold fill-current" />
+    <span>for beautiful women in Kuwait</span>
+  </span>
+  <a
+    href="https://illuxai.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline hover:text-gold transition-colors mt-1"
+  >
+    By Illuxai.com
+  </a>
+</div>
             </p>
           </div>
         </div>
