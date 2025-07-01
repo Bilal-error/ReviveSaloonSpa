@@ -36,7 +36,7 @@ const Header = () => {
             <img
   src="https://i.ibb.co/SXnJ0ZwN/b7bb999c4e6f10a84d6ed93657d73642-tplv-tiktokx-cropcenter-1080-1080.jpg"
   alt="Revive Saloon & Spa Logo"
-  className="w-15 h-15 rounded-full object-cover shadow-lg"
+  className="w-10 h-10 rounded-full object-cover shadow-lg"
 />
             <div>
               <h1 className="font-serif font-bold text-xl text-sage">R.V.S</h1>
