@@ -51,9 +51,9 @@ const Hero = () => {
           {/* Animated Title with Enhanced Typography */}
           <div className="animate-fade-in">
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight tracking-tight drop-shadow-2xl">
-              Elevate 
+              Elevate Your
               <span className="block bg-gradient-to-r from-gold via-amber-400 to-yellow-300 bg-clip-text text-transparent animate-gradient mt-2 mb-2 drop-shadow-none">
-                Your Confidence.
+                Confidence.
               </span>
               <span className="text-rose-200 drop-shadow-lg">Feel Revived.</span>
             </h1>
